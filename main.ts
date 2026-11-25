@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const outDir = process.env.MAKEFUN_OUTPUT_DIR || "/output";
+// The program keeps the memory as one plain sentence so nothing extra reaches the output file.
 const text = "When the ice cream bell rang I ran with coins clutched in my fist, and the vendor handed me a cone already melting down my wrist before I had even turned back toward home.";
 
 mkdirSync(outDir, { recursive: true });
